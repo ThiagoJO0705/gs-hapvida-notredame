@@ -3,6 +3,8 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    background-color: $bg-color_principal2;
+    color: $txt-color_white;
 }
 
 .container-login {
@@ -42,6 +44,7 @@ html {
         border-top-right-radius: 3rem;
         border-top-left-radius: 3rem;
         padding: 2rem;
+        background-color: $bg-color_principal;
 
         .titulo{
             font-size: 4rem;
