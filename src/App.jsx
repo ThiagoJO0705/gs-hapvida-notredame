@@ -1,13 +1,14 @@
 
 import { Outlet } from 'react-router-dom'
 import './App.css'
+import Cabecalho from "./Components/Cabecalho/Cabecalho.jsx"
 
 
 function App() {
   return (
     <>
-        <h1>Menu</h1>
-
+        
+        <Cabecalho />
         <Outlet/>
     </>
   )
