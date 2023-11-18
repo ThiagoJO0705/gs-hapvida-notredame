@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import { FaUserCircle } from "react-icons/fa";
 import "./Cabecalho.scss"
 import { useState } from 'react';
+import logo from "../../assets/logo.png"
 
 
 export default function Cabecalho() {
@@ -15,14 +16,15 @@ export default function Cabecalho() {
     return(
         <div className='cabecalho'>
             <header>
-                <img src="" alt="" />
+                <img className='logo' src={logo} alt="Logo HealthTrackr" />
                 <nav>
                     <ul>
                         <li>
-                        <Link to="#solucao">Solução</Link>
-                        <Link to="#funcao">Função</Link>
-                        <Link to="#">Função</Link>
-                        <Link to="#funcao">Função</Link>
+                        <ScrollLink to="solucao" smooth={true} duration={0}>Solução</ScrollLink>
+                        <ScrollLink to="acao" smooth={true} duration={0}>Ação</ScrollLink>
+                        <ScrollLink to="funcao" smooth={true} duration={0}>Função</ScrollLink>
+                        <ScrollLink to="vantagens" smooth={true} duration={0}>Vantagens</ScrollLink>
+                        <ScrollLink to="desafio" smooth={true} duration={0}>Desafios</ScrollLink>
                         </li>
                     </ul>
                 </nav>
@@ -31,7 +33,7 @@ export default function Cabecalho() {
                         <p>Nome</p>
                         <FaUserCircle cursor={"pointer"} size={60} onClick={handleClick}/>
                     </div>
-                    <div className={`logout ${openLogout ? "logout-aberto" : "logout-fechado"}`}>
+                    <div className={openLogout ? "logout" : "logout-fechado"}>
                         <p>Logout</p>
                     </div>
                 </div>

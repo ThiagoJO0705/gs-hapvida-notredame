@@ -15,9 +15,11 @@
         width: 100%;
         nav{
             margin-top: auto;
+            cursor: pointer;
             ul{
                 li{
                     list-style: none;
+                    color: #fff;
 
                     a {
                         padding: 2rem;
@@ -31,6 +33,11 @@
                     }
                 }
             }
+        }
+
+        .logo {
+            width: 200px;
+            height: 100px;
         }
 
         .perfil {
@@ -47,19 +54,23 @@
                 align-items: center;
                 margin-left: auto;
                 margin-right: 10px; 
+                color: white;
             }
 
             .logout {
                 color: red;
                 background-color: #3a3a3a;
-                height: 30px;
-                width: 100px;
+                height: 50px;
+                width: 120px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
                 position: absolute;
                 top: 90px;
+                z-index: 1;
+                font-weight: bold;
+                text-shadow: 1px 1px rgb(255, 140, 140);
 
                 &:hover{
                     background-color: #9a9a9a;
