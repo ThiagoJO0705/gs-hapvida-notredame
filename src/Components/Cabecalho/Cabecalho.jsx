@@ -28,6 +28,9 @@ export default function Cabecalho() {
                         </li>
                     </ul>
                 </nav>
+                <div className='titulo'>
+                    <h1>HealthTrackr</h1>
+                </div>
                 <div className='perfil'>
                     <div className='info-usuario'>
                         <p>Nome</p>

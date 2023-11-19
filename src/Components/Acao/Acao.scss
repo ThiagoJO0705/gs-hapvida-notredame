@@ -4,13 +4,18 @@ html {
 
 .acao {
     grid-column: 1/13;
-    grid-row: 18/26;
+    grid-row: 19/27;
     background-color: white;
     padding: 2rem;
 
-    @media screen and (max-width:889px) {
-        grid-row: 18 / 30
+    .titulo {
+        font-size: 5rem;
     }
+
+    @media screen and (max-width:889px) {
+        grid-row: 19 / 31;
+    }
+
 }
 
 .container-cards{

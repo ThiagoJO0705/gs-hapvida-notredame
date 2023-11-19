@@ -10,7 +10,7 @@ export default function Acao() {
   return (
     <section className="acao">
       <div>
-        <h1 >O Que Ele Fará ?</h1>
+        <h1 className="titulo" >O Que Ele Fará ?</h1>
         <div className="container-cards">
           <div className="card">
             <div className="content">
