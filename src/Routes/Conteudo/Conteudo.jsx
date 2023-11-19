@@ -5,6 +5,7 @@ import Solucao from "../../Components/Solucao/Solucao.jsx"
 import Acao from "../../Components/Acao/Acao.jsx"
 import Funcao from "../../Components/Funcao/Funcao.jsx"
 import Vantagem from '../../Components/Vantagem/Vantagem.jsx';
+import Desafio from '../../Components/Desafio/Desafio.jsx';
 
 function Conteudo() {
 
@@ -16,6 +17,7 @@ function Conteudo() {
         <Acao />
         <Funcao />
         <Vantagem />
+        <Desafio />
  
     </>
 

@@ -1,0 +1,32 @@
+.desafio {
+    grid-row: 41/48;
+    grid-column: 1/13;
+    font-size: 2rem;
+    padding-left: 2rem;
+    background-color: white;
+}
+
+.container-titulo {
+    padding-top: 3rem;
+    max-width: 80rem;
+
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+.container-lista {
+    margin-left: 35vw;
+    padding: 3rem 0 3rem 10rem;
+    background-color: rgb(255, 95, 95);
+    border-bottom-left-radius: 20rem;
+    border-top-left-radius: 20rem;
+    display: flex;
+    text-shadow: 1px 1px black;
+    color: white;
+}
+
+.container-conclusao {
+    padding-top: 3rem;
+    max-width: 80rem;
+}
