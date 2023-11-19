@@ -1,0 +1,17 @@
+html {
+    font-size: 62.5%;
+}
+
+main {
+    grid-column: 1/13;
+    grid-row: 3/11;
+
+    .carrossel {
+        z-index: 0;
+
+        .imagem-carrossel {
+            width: 100vw;
+            height: 90rem;
+        }
+    }
+}
