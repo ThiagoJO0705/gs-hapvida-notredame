@@ -18,17 +18,17 @@ export default function Carrossel() {
       <>
         <main>
             <Carousel className='carrossel' activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
+            <Carousel.Item interval={3000}>
                 <img className='imagem-carrossel' src={ImagemCarrosel1} alt="First slide" />
                 <Carousel.Caption>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={3000}>
                 <img className='imagem-carrossel' src={ImagemCarrosel3} alt="Second slide" />
                 <Carousel.Caption>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={3000}>
                 <img className='imagem-carrossel' src={ImagemCarrosel2} alt="Third slide" />
                 <Carousel.Caption>
                 </Carousel.Caption>
