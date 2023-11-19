@@ -23,7 +23,7 @@ export default function Cabecalho() {
                         <ScrollLink to="solucao" smooth={true} duration={0}>Solução</ScrollLink>
                         <ScrollLink to="acao" smooth={true} duration={0}>Ação</ScrollLink>
                         <ScrollLink to="funcao" smooth={true} duration={0}>Função</ScrollLink>
-                        <ScrollLink to="vantagens" smooth={true} duration={0}>Vantagens</ScrollLink>
+                        <ScrollLink to="vantagem" smooth={true} duration={0}>Vantagens</ScrollLink>
                         <ScrollLink to="desafio" smooth={true} duration={0}>Desafios</ScrollLink>
                         </li>
                     </ul>
