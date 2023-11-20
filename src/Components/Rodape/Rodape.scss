@@ -1,0 +1,51 @@
+footer {
+    grid-column: 1/13;
+    grid-row: 48/50;
+    background-color: #0C0C44;
+    color: white;
+    padding: 2rem;
+
+    .container-rodape {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        h3 {
+            font-size: 2.2rem;
+        }
+
+        .informacoes-contato {
+            font-size: 1.4rem;
+        }
+
+        .links-importantes {
+            font-size: 1.4rem;
+            
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .faq {
+            font-size: 1.4rem;
+            text-decoration: underline;
+
+            p {
+                cursor: pointer;
+            }
+        }
+
+        .direitos-autorais {
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+

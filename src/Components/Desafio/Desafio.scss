@@ -24,6 +24,11 @@
     display: flex;
     text-shadow: 1px 1px black;
     color: white;
+
+    ul {
+        list-style: none;
+        line-height: 6rem;
+    }
 }
 
 .container-conclusao {

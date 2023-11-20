@@ -1,4 +1,4 @@
-import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { FaUserCircle } from "react-icons/fa";
 import "./Cabecalho.scss"
 import { useState } from 'react';
@@ -20,11 +20,11 @@ export default function Cabecalho() {
                 <nav>
                     <ul>
                         <li>
-                        <ScrollLink to="solucao" smooth={true} duration={0}>Solução</ScrollLink>
-                        <ScrollLink to="acao" smooth={true} duration={0}>Ação</ScrollLink>
-                        <ScrollLink to="funcao" smooth={true} duration={0}>Função</ScrollLink>
-                        <ScrollLink to="vantagem" smooth={true} duration={0}>Vantagens</ScrollLink>
-                        <ScrollLink to="desafio" smooth={true} duration={0}>Desafios</ScrollLink>
+                        <Link to="solucao" smooth={true} duration={0}>Solução</Link>
+                        <Link to="acao" smooth={true} duration={0}>Ação</Link>
+                        <Link to="funcao" smooth={true} duration={0}>Função</Link>
+                        <Link to="vantagem" smooth={true} duration={0}>Vantagens</Link>
+                        <Link to="desafio" smooth={true} duration={0}>Desafios</Link>
                         </li>
                     </ul>
                 </nav>

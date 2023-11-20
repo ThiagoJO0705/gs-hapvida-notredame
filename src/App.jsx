@@ -2,6 +2,7 @@
 import { Outlet } from 'react-router-dom'
 import './App.scss'
 import Cabecalho from "./Components/Cabecalho/Cabecalho.jsx"
+import Rodape from './Components/Rodape/Rodape.jsx'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <div className='container-grid'>        
         <Cabecalho />
         <Outlet/>
+        <Rodape />
       </div> 
     </>
   )
