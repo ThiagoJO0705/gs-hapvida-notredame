@@ -62,14 +62,15 @@ export default function Cabecalho() {
                     </ul>
                 </nav>
 
-                
+
                 <div className='perfil'>
                     <div className='info-usuario'>
                         <p>Nome</p>
                         <FaUserCircle cursor={"pointer"} size={60} onClick={handleClick}/>
                     </div>
                     <div className={openLogout ? "logout" : "logout-fechado"}>
-                        <p>Logout</p>
+                        <p className='btn-logout'>Logout</p>
+                        <p className='nome-logout'>Nome</p>
                     </div>
                 </div>
             </header>

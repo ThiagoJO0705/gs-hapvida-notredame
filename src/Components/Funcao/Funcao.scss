@@ -16,6 +16,11 @@
         text-align: justify;
         h1{
             font-size: 5rem;
+
+            @media screen and (max-width:460px) {
+                font-size: 4rem;
+              }
+    
         }
 
         p {
@@ -25,6 +30,10 @@
         @media screen and (max-width:906px) {
             font-size: 2.2rem;
         }
+
+        @media screen and (max-width:460px) {
+            font-size: 1.6rem;
+          }
 
 
     }

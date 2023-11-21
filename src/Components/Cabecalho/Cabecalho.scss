@@ -161,6 +161,12 @@
             height: 120px;
             border-radius: 50%;
             margin-left: 1rem;
+
+            @media screen and (max-width:606px) {
+                width: 80px;
+                height: 80px;
+                
+              }
         }
 
         .perfil {
@@ -178,25 +184,55 @@
                 margin-left: auto;
                 margin-right: 10px; 
                 color: white;
+
+                p {
+                    @media screen and (max-width:606px) {
+                        display: none;
+                      }
+                }
             }
 
             .logout {
                 color: red;
                 background-color: #3a3a3a;
                 height: 50px;
-                width: 120px;
+                // width: 120px;
+                padding: 5rem 2rem;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                cursor: pointer;
                 position: absolute;
                 top: 120px;
                 z-index: 1;
                 font-weight: bold;
                 text-shadow: 1px 1px rgb(255, 140, 140);
-
-                &:hover{
-                    background-color: #9a9a9a;
+                
+                
+                
+                @media screen and (max-width:606px) {
+                    left: 70vw;
+                }
+                @media screen and (max-width:420px) {
+                    left: 55vw;
+                }
+                
+                .nome-logout  {
+                    display: none;
+                    color: white;
+                    text-shadow: none;
+                    
+                    @media screen and (max-width:606px) {
+                        display: block;
+                    }
+                }
+                
+                .btn-logout{
+                    cursor: pointer;
+                    padding: 1rem 2rem;
+                    &:hover{
+                        background-color: #9a9a9a;
+                    }
                 }
             } 
 

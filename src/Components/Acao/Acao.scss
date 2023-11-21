@@ -10,6 +10,10 @@ html {
 
     .titulo {
         font-size: 5rem;
+
+        @media screen and (max-width:420px) {
+          font-size: 3.8rem;
+      }
     }
 
     @media screen and (max-width:906px) {
