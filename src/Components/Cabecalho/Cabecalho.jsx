@@ -3,12 +3,15 @@ import { FaUserCircle } from "react-icons/fa";
 import "./Cabecalho.scss"
 import { useState } from 'react';
 import logo from "../../assets/logo.png"
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Cabecalho() {
 
     const [openLogout, setOpenLogout] = useState(false)
     const [openMenu, setOpenMenu] = useState(false)
+
+    const navigate = useNavigate()
 
     const handleClick = () => {
         setOpenLogout(!openLogout)
@@ -17,13 +20,17 @@ export default function Cabecalho() {
     const handleClickMenu = () => {
         setOpenMenu(!openMenu)
         console.log(openMenu)
+    }
 
+    const logoClick = () => {
+        navigate("/")
     }
 
     return(
         <div className='cabecalho'>
             <header>
-                <img className='logo' src={logo} alt="Logo HealthTrackr" />
+                    
+                <img className='logo' src={logo} alt="Logo HealthTrackr" onClick={logoClick}/>
 
                 <nav className='menu'>
                     <ul>

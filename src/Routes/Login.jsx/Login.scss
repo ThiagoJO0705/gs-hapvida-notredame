@@ -2,19 +2,16 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
-    background-color: $bg-color_principal2;
-    color: $txt-color_white;
+    overflow: hidden;
 }
 
 .container-login {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-	grid-template-rows: repeat(auto, 100px);
+    grid-column: 1/13;
+    grid-row: 3/4;
 
     .box-azul{
-        grid-template-columns: 1/13;
-        grid-row: 1/2;
+        color: $txt-color_white;
+        text-shadow: 1px 1px black;
         width: 97vw;
         display: flex;
         flex-direction: column;
@@ -33,8 +30,8 @@ html {
     }
     
     .box-branca{
-        grid-column: 1/13;
-        grid-row: 3/5;
+        overflow-y: auto;
+        color: $txt-color_white;
         border: $border_white;
         display: flex;
         flex-direction: column;
@@ -44,13 +41,11 @@ html {
         border-top-right-radius: 3rem;
         border-top-left-radius: 3rem;
         padding: 2rem;
-        background-color: $bg-color_principal;
+        background-color: $bg-color_terciaria;
 
         .titulo{
             font-size: 4rem;
             font-weight: bold;
-            // width: 45rem;
-            // grid-row: 4;
         }
 
         .form {
@@ -64,6 +59,7 @@ html {
             height: 35rem;
             background-color: $bg-color_principal;
             border: $border_white;
+            box-shadow: 7px 7px rgba(255, 255, 255, 0.562);
 
             input {
                 max-width: 40rem;
@@ -87,9 +83,13 @@ html {
                 justify-content: center;
                 max-width: 450px;
                 width: 100%;
+                text-shadow: 1px 1px black;
 
                 .cadastro {
-                    color: $txt-color_white;
+                    color: #0C0C44;
+                    text-shadow: none;
+                    font-weight: bold;
+
                 }
             }
 
@@ -98,6 +98,11 @@ html {
                 flex-direction: column;
                 padding: 2.5rem;
                 justify-content: center;
+
+                label {
+                    font-size: 2rem;
+                    text-shadow: 1px 1px black;
+                }
 
             }
 
@@ -109,6 +114,11 @@ html {
                 margin-top: -2.5rem;
                 padding-bottom: 0;
 
+                label {
+                    font-size: 2rem;
+                    text-shadow: 1px 1px black;
+                }
+
             }
 
             .manter-conectado{
@@ -118,28 +128,11 @@ html {
                 max-width: 45rem;
                 width: 100%;
                 justify-content: space-between;
+                text-shadow: 1px 1px black;
 
                 .checkbox{
                     display: flex;
                     align-items: center;
-                    label {
-                        font-size: 1.6rem;
-                        font-weight: lighter;
-                        padding-left: 0.5rem;
-                        margin-top: 0.4rem;
-    
-    
-                    }
-
-                    input[type="checkbox"] {
-                        width: 1.7rem;
-                        height: 1.7rem;
-                        outline: none;
-                        border: $border_black;
-                        box-shadow: 0px 0px;
-
-
-                    }
                 }
 
                 p{
@@ -213,5 +206,48 @@ html {
 
         }
     }
+    .checkbox-wrapper {
+        input[type="checkbox"] {
+        display: none;
+      }
+
+      .terms-label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        .label-text {
+          margin-left: 10px;
+          font-size: 1.6rem;
+        }
+      }
+
+      .checkbox-svg {
+        width: 30px;
+        height: 30px;
+      }
+
+      .checkbox-box {
+        fill: rgba(88, 88, 88, 0.425);
+        stroke: #0C0C44;
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+        transition: stroke-dashoffset 0.6s ease-in;
+      }
+
+      .checkbox-tick {
+        stroke: #0C0C44;
+        stroke-dasharray: 172;
+        stroke-dashoffset: 172;
+        transition: stroke-dashoffset 0.6s ease-in;
+      }
+    }
+      
     }
     
+
+      .checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-box,
+        .checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-tick {
+        stroke-dashoffset: 0;
+      }
+      
