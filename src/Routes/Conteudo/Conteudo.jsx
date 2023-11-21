@@ -9,19 +9,18 @@ import Desafio from '../../Components/Desafio/Desafio.jsx';
 
 function Conteudo() {
 
-
-  return (
-    <>
-        <Carrossel />
-        <Solucao />
-        <Acao />
-        <Funcao />
-        <Vantagem />
-        <Desafio />
- 
-    </>
-
-  );
+    return (
+      <>
+          <Carrossel />
+          <Solucao />
+          <Acao />
+          <Funcao />
+          <Vantagem />
+          <Desafio />
+   
+      </>
+  
+    );
 }
 
 export default Conteudo;

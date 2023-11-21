@@ -1,0 +1,53 @@
+{
+    "usuarios": [
+      {
+        "id": 1,
+        "nome": "Alexandre Carlos de Jesus",
+        "usuario": "alecarlosjesus",
+        "email": "profalexandre.jesus@fiap.com.br",
+        "senha": "ale123fiap"
+      },
+      {
+        "id": 2,
+        "nome": "Luis Carlos de Souza Silva",
+        "usuario": "lsilva",
+        "email": "lsilva@fiap.com.br",
+        "senha": "luis123fiap"
+      },
+      {
+        "id": 3,
+        "nome": "Allen Oberleitner",
+        "usuario": "oberleitner-allen",
+        "email": "allen@fiap.com.br",
+        "senha": "allen123fiap"
+      },
+      {
+        "id": 4,
+        "nome": "Fabio Henrique Cabrini",
+        "usuario": "fabiocabrini",
+        "email": "proffabio.cabrini@fiap.com.br",
+        "senha": "fabio123fiap"
+      },
+      {
+        "id": 5,
+        "nome": "Paulo Viniccius Vieira",
+        "usuario": "pauloviniccius",
+        "email": "profpaulo.vieira@fiap.com.br",
+        "senha": "paulo123fiap"
+      },
+      {
+        "id": 6,
+        "nome": "Danilo Rodrigues de Assis",
+        "usuario": "danrodrigues",
+        "email": "profdanilo.elias@fiap.com.br",
+        "senha": "danilo123fiap"
+      },
+      {
+        "id": 7,
+        "nome": "Patrícia Mari Matsuda",
+        "usuario": "patmatsuda",
+        "email": "profpatricia.matsuda@fiap.com.br",
+        "senha": "patricia123fiap"
+      }
+    ]
+}

@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll';
 import { FaUserCircle } from "react-icons/fa";
 import "./Cabecalho.scss"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import logo from "../../assets/logo.png"
 import { useNavigate } from 'react-router-dom';
 
@@ -24,6 +24,38 @@ export default function Cabecalho() {
 
     const logoClick = () => {
         navigate("/")
+    }
+
+
+
+
+    const [storedData, setStoredData] = useState({
+        nome: "",
+        email: "",
+    })
+    
+    
+    useEffect(() => {
+        async function fetchData() {
+            const dataFromStorage =
+                JSON.parse(sessionStorage.getItem("data-user")) ||
+                JSON.parse(localStorage.getItem("data-user"));
+    
+            console.log("Data from storage:", dataFromStorage);
+    
+            if (dataFromStorage) {
+                setStoredData(dataFromStorage);
+            }
+        }
+    
+        fetchData();
+    }, []);
+    
+
+    const handleClickLogout = ()=> {
+        sessionStorage.removeItem("token-user") || localStorage.removeItem("token-user")
+        sessionStorage.removeItem("data-user") || localStorage.removeItem("data-user")
+        window.location.reload()
     }
 
     return(
@@ -72,12 +104,12 @@ export default function Cabecalho() {
 
                 <div className='perfil'>
                     <div className='info-usuario'>
-                        <p>Nome</p>
+                        <p>{storedData.nome}</p>
                         <FaUserCircle cursor={"pointer"} size={60} onClick={handleClick}/>
                     </div>
                     <div className={openLogout ? "logout" : "logout-fechado"}>
-                        <p className='btn-logout'>Logout</p>
-                        <p className='nome-logout'>Nome</p>
+                        <p onClick={handleClickLogout} className='btn-logout'>Logout</p>
+                        <p className='nome-logout'>{storedData.nome}</p>
                     </div>
                 </div>
             </header>

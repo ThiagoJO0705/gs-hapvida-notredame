@@ -187,6 +187,7 @@
                 color: white;
 
                 p {
+                    font-size: 1.6rem;
                     @media screen and (max-width:606px) {
                         display: none;
                       }
@@ -197,7 +198,7 @@
                 color: red;
                 background-color: #3a3a3a;
                 height: 50px;
-                // width: 120px;
+                left: 90%;
                 padding: 5rem 2rem;
                 display: flex;
                 flex-direction: column;

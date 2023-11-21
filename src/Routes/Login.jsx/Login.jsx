@@ -36,7 +36,7 @@ export default function Login(){
         let users;
         let user;
         try {
-            const response = await fetch("http://localhost:5001/usuarios");
+            const response = await fetch("http://localhost:5010/usuarios");
             users = await response.json();
 
         } catch (error) {
@@ -45,7 +45,7 @@ export default function Login(){
 
         for (let x = 0; x < users.length; x++) {
             user = users[x];
-
+    
             if (user.email === login.usuario && user.senha === login.senha || user.usuario === login.usuario && user.senha === login.senha) {
                 alert("Login realizado com SUCESSO!");
 
@@ -62,6 +62,7 @@ export default function Login(){
                 storage.setItem("data-user", JSON.stringify(userWithoutPassword));
     
                 navigate("/");
+                window.location.reload(); 
                 return;
             }
         }
