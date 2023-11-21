@@ -45,7 +45,9 @@
         }
 
         .menu-aparecendo{
+            color: #0C0C44;
             @media screen and (max-width:1180px) {
+                color: white;
                 display: block;
                 z-index: 10;
                 margin-top: 50rem;
@@ -188,7 +190,7 @@
                 justify-content: center;
                 cursor: pointer;
                 position: absolute;
-                top: 90px;
+                top: 120px;
                 z-index: 1;
                 font-weight: bold;
                 text-shadow: 1px 1px rgb(255, 140, 140);

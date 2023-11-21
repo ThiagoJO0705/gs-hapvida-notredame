@@ -5,10 +5,43 @@ footer {
     color: white;
     padding: 2rem;
 
+    @media screen and (max-width:1655px) {
+        grid-row: 50/52;
+      }
+
+      @media screen and (max-width:1525px) {
+        grid-row: 53/55;
+      }
+
+      @media screen and (max-width:1296px) {
+        grid-row: 58/61;
+      }
+
+      @media screen and (max-width:906px) {
+        grid-row: 60/64;
+      }
+
+      @media screen and (max-width:776px) {
+        grid-row: 68/73;
+      }
+
+      @media screen and (max-width:690px) {
+        grid-row: 70/75;
+      }
+
+      @media screen and (max-width:606px) {
+        grid-row: 78/85;
+      }
+
+      @media screen and (max-width:516px) {
+        grid-row: 92/99;
+      }
+
     .container-rodape {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        gap: 3.4rem;
 
         h3 {
             font-size: 2.2rem;

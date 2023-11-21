@@ -6,6 +6,22 @@ html {
     grid-column: 1/13;
     grid-row: 33/40;
 
+    @media screen and (max-width:1296px) {
+      grid-row: 33/44;
+    }
+
+    @media screen and (max-width:906px) {
+      grid-row: 36 / 46;
+    }
+
+    @media screen and (max-width:606px) {
+      grid-row: 49/65;
+    }
+
+    @media screen and (max-width:516px) {
+      grid-row: 50/72;
+    }
+
     .titulo {
         display: flex;
         justify-content: center;

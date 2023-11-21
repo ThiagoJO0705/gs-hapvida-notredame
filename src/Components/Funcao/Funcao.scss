@@ -2,6 +2,14 @@
     grid-column: 1/13;
     grid-row: 28/30;
     padding: 2rem;
+
+    @media screen and (max-width:906px) {
+        grid-row: 32 / 34;
+    }
+
+    @media screen and (max-width:606px) {
+        grid-row: 44/48;
+    }
     .container-funcao {
         font-size: 3rem;
         max-width: 120rem;
@@ -13,6 +21,12 @@
         p {
             margin-top: 1rem;
         }
+
+        @media screen and (max-width:906px) {
+            font-size: 2.2rem;
+        }
+
+
     }
 
 
