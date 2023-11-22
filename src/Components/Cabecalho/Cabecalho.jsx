@@ -27,9 +27,6 @@ export default function Cabecalho() {
         navigate("/")
     }
 
-
-
-
     const [storedData, setStoredData] = useState({
         nome: "",
         email: "",
@@ -56,7 +53,7 @@ export default function Cabecalho() {
     const handleClickLogout = ()=> {
         sessionStorage.removeItem("token-user") || localStorage.removeItem("token-user")
         sessionStorage.removeItem("data-user") || localStorage.removeItem("data-user")
-        window.location.reload()
+        navigate("/login")
     }
     if(sessionStorage.getItem("token-user") || localStorage.getItem("token-user")){
 
