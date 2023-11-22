@@ -130,6 +130,11 @@
                 display: block;
             }
 
+            @media screen and (max-width:380px) {
+                margin-right: 1rem;
+                left: 10%;
+            }
+
 
 
           }
@@ -171,11 +176,7 @@
         }
 
         .perfil {
-            // display: flex;
-            // gap: 10px;
-            // align-items: center;
             margin-left: auto;
-            // gap: 10px;
             margin-right: 10px;
 
             .info-usuario{
@@ -185,6 +186,23 @@
                 margin-left: auto;
                 margin-right: 10px; 
                 color: white;
+
+                .nome-email {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+
+                    .nome-desk {
+                        margin-top: 1rem;
+                    }
+
+                    .email-desk {
+                        font-size: 1.2rem;
+                        margin-top: -0.5rem;
+                    }
+                }
+
 
                 p {
                     font-size: 1.6rem;
@@ -210,27 +228,23 @@
                 font-weight: bold;
                 text-shadow: 1px 1px rgb(255, 140, 140);
                 
-                
-                @media screen and (max-width:1390px) {
-                    left: 85vw;
-                }
-
-                @media screen and (max-width:950px) {
-                    left: 75vw;
-                }
-
-                @media screen and (max-width:606px) {
-                    left: 70vw;
-                }
-                @media screen and (max-width:420px) {
-                    left: 55vw;
-                }
-                
                 .nome-logout  {
+                    font-size: 1.4rem;
                     display: none;
                     color: white;
                     text-shadow: none;
                     
+                    @media screen and (max-width:606px) {
+                        display: block;
+                    }
+                }
+
+                .email-logout {
+                    font-size: 1.2rem;
+                    display: none;
+                    color: white;
+                    text-shadow: none;
+
                     @media screen and (max-width:606px) {
                         display: block;
                     }
@@ -243,13 +257,70 @@
                         background-color: #9a9a9a;
                     }
                 }
+
+                @media screen and (max-width:1390px) {
+                    left: 85vw;
+                }
+    
+                @media screen and (max-width:950px) {
+                    left: 75vw;
+                }
+    
+                @media screen and (max-width:606px) {
+                    left: 55vw;
+                }
+
+                @media screen and (max-width:490px) {
+                    left: 40vw;
+                }
+
+                @media screen and (max-width:380px) {
+                    left: 20vw;
+                }
             } 
+                
+                
 
             .logout-fechado {
                 display: none;
             }
              
         }
+
+        .container-btn {
+            margin-left: auto;
+            margin-right: 5rem;
+
+            .btn {
+                font-size: 1.2rem;
+                padding: 1.5rem 3rem;
+                border: none;
+                outline: none;
+                border-radius: 0.4rem;
+                cursor: pointer;
+                text-transform: uppercase;
+                background-color: white;
+                color: black;
+                font-weight: 700;
+                transition: 0.6s;
+                box-shadow: 0px 0px 60px #1f4c65;
+                -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+
+                &:active {
+                  scale: 0.92;
+                }
+                &:hover {
+                  background: rgb(2,29,78);
+                  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+                  color: white;
+                  text-shadow: 2px 2px black;
+                }
+              }
+              
+              @media screen and (max-width:380px) {
+                margin-right: 1rem;
+            }
+              
+        }
     }
 }
-
