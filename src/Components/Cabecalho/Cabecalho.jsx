@@ -105,11 +105,13 @@ export default function Cabecalho() {
                 <div className='perfil'>
                     <div className='info-usuario'>
                         <p>{storedData.nome}</p>
+                        <p>{storedData.email}</p>
                         <FaUserCircle cursor={"pointer"} size={60} onClick={handleClick}/>
                     </div>
                     <div className={openLogout ? "logout" : "logout-fechado"}>
                         <p onClick={handleClickLogout} className='btn-logout'>Logout</p>
                         <p className='nome-logout'>{storedData.nome}</p>
+                        <p>{storedData.email}</p>
                     </div>
                 </div>
             </header>
