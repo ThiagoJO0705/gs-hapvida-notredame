@@ -13,12 +13,12 @@ export default function Acao() {
         <h1 className="titulo" >O Que Ele Fará ?</h1>
         <div className="container-cards">
           <div className="card">
-            <div className="content">
+            <div className="content" >
               <div className="back">
                 <div className="back-content">
                   <TbDeviceHeartMonitor size={100} />
                   <h1>Monitoramento Contínuo</h1>
-                  <p>Clique Aqui</p>
+                  <p>Passe o Mouse Aqui</p>
                 </div>
               </div>
               <div className="front">
@@ -53,7 +53,7 @@ export default function Acao() {
                 <div className="back-content">
                 <IoAlertCircleOutline size={100} />
                   <h1>Alertas Personalizados</h1>
-                  <p>Clique Aqui</p>
+                  <p>Passe o Mouse Aqui</p>
                 </div>
               </div>
               <div className="front">
@@ -86,7 +86,7 @@ export default function Acao() {
                 <div className="back-content">
                 <FaRunning size={100} />
                   <h1>IA para Atividade Física</h1>
-                  <p>Clique Aqui</p>
+                  <p>Passe o Mouse Aqui</p>
                 </div>
               </div>
               <div className="front">
@@ -119,7 +119,7 @@ export default function Acao() {
                 <div className="back-content">
                   <MdLocalHospital size={100} />
                   <h1>Assistência em Emergências</h1>
-                  <p>Clique Aqui</p>
+                  <p>Passe o Mouse Aqui</p>
                 </div>
               </div>
               <div className="front">
@@ -152,7 +152,7 @@ export default function Acao() {
                 <div className="back-content">
                   <RiMentalHealthFill size={100} />
                   <h1>Integração de Dados de Saúde Mental</h1>
-                  <p>Clique Aqui</p>
+                  <p>Passe o Mouse Aqui</p>
                 </div>
               </div>
               <div className="front">
@@ -185,7 +185,7 @@ export default function Acao() {
                 <div className="back-content">
                   <IoGameController size={100} />
                   <h1>Gamificação da Saúde</h1>
-                  <p>Clique Aqui</p>
+                  <p>Passe o Mouse Aqui</p>
                 </div>
               </div>
               <div className="front">
