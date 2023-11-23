@@ -36,7 +36,7 @@ export default function Login(){
         let users;
         let user;
         try {
-            const response = await fetch("http://localhost:5001/usuarios");
+            const response = await fetch("http://localhost:5010/usuarios");
             users = await response.json();
 
         } catch (error) {
@@ -45,7 +45,7 @@ export default function Login(){
 
         for (let x = 0; x < users.length; x++) {
             user = users[x];
-
+    
             if (user.email === login.usuario && user.senha === login.senha || user.usuario === login.usuario && user.senha === login.senha) {
                 alert("Login realizado com SUCESSO!");
 
@@ -62,6 +62,7 @@ export default function Login(){
                 storage.setItem("data-user", JSON.stringify(userWithoutPassword));
     
                 navigate("/");
+                window.location.reload(); 
                 return;
             }
         }
@@ -96,9 +97,18 @@ export default function Login(){
                     </div>
 
                     <div className="manter-conectado">
-                        <div className="checkbox">
-                            <input type="checkbox" name="conectado" checked={manterConectado} onChange={handleCheckboxChange}/>
-                            <label htmlFor="conectado">Manter conectado</label>
+                        <div className="checkbox-wrapper">
+                        <input id="terms-checkbox-37" name="checkbox" type="checkbox" onChange={handleCheckboxChange}/>
+                        <label className="terms-label" htmlFor="terms-checkbox-37">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200" className="checkbox-svg">
+                            <mask fill="white" id="path-1-inside-1_476_5-37">
+                                <rect height="200" width="200"></rect>
+                            </mask>
+                            <rect mask="url(#path-1-inside-1_476_5-37)" strokeWidth="40" className="checkbox-box" height="200" width="200"></rect>
+                            <path strokeWidth="15" d="M52 111.018L76.9867 136L149 64" className="checkbox-tick"></path>
+                            </svg>
+                            <span className="label-text">Manter Conectado</span>
+                        </label>
                         </div>
                         <p>Esqueci a senha</p>
                     </div>

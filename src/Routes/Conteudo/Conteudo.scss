@@ -4,4 +4,36 @@ body {
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
+
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #DFE9EB;
+
+  &:hover {
+    background-color: #B8C0C2;
+  }
+  
+  &:active {
+    background-color: #B8C0C2;
+  }
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #0C0C44;
+
+  &:hover {
+    background-color: #3c3c6d;
+  }
+
+  &:active {
+    background-color: #3c3c6d;
+  }
+}
+

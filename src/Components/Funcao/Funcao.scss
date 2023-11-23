@@ -2,54 +2,41 @@
     grid-column: 1/13;
     grid-row: 28/30;
     padding: 2rem;
+
+    @media screen and (max-width:906px) {
+        grid-row: 32 / 34;
+    }
+
+    @media screen and (max-width:606px) {
+        grid-row: 44/48;
+    }
     .container-funcao {
         font-size: 3rem;
-        width: 120rem;
+        max-width: 120rem;
         text-align: justify;
         h1{
             font-size: 5rem;
+
+            @media screen and (max-width:460px) {
+                font-size: 4rem;
+              }
+    
         }
 
         p {
             margin-top: 1rem;
         }
-    }
 
-
-}
-  
-.loading {
-    svg{
-
-         polyline {
-            fill: none;
-            stroke-width: 3;
-            stroke-linecap: round;
-            stroke-linejoin: round;   
-    }
-        polyline#back {
-            fill: none;
-            stroke: #ff4d5033;
+        @media screen and (max-width:906px) {
+            font-size: 2.2rem;
         }
 
-        polyline#front {
-            fill: none;
-            stroke: #ff4d4f;
-            stroke-dasharray: 48, 144;
-            stroke-dashoffset: 192;
-            animation: dash_682 1.4s linear infinite;
+        @media screen and (max-width:460px) {
+            font-size: 1.6rem;
           }
-  }
-}
 
-  
-  @keyframes dash_682 {
-    72.5% {
-      opacity: 0;
+
     }
-  
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-  
+
+
+}

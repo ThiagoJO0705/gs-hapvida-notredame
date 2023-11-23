@@ -1,5 +1,9 @@
 html {
     font-size: 62.5%;
+
+    @media screen and (max-width:440px) {
+        font-size: 50%;
+    }
 }
 
 .solucao {
@@ -10,27 +14,32 @@ html {
     background-position: 10rem center;
     background-repeat: no-repeat;
     height: 80rem;
+    padding: 2rem;
     .container-solucao {
         display: flex;
 
         .texto-solucao {
             font-size: 2.4rem;
-            margin: 18rem 0 0 2rem;
+            margin: 15rem 0 0 2rem;
             width: 70rem;
             color: #fff;
             text-shadow: 2px 2px black;
 
             h1 {
                 font-size: 7rem;
+
+                @media screen and (max-width:460px) {
+                    font-size: 4rem;
+                  }
             }
 
-            @media screen and (max-width: 1200px) {
+            @media screen and (max-width:606px) {
                 font-size: 1.8rem;
-            }
+              }
 
-            @media screen and (max-width: 800px) {
-                font-size: 1.5rem;
-            }
+              @media screen and (max-width:460px) {
+                font-size: 1.6rem;
+              }
         }
     }
 }
