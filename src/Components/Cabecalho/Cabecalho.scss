@@ -14,7 +14,7 @@
         align-items: center;
         width: 100%;
         color: #fff;
-        nav{
+        .menu{
             margin-top: auto;
             cursor: pointer;
             ul{
@@ -34,13 +34,129 @@
                     }
                 }
             }
+
+            @media screen and (max-width:1180px) {
+                display: none;
+            }
         }
+
+        .menu-mobile {
+            display: none;
+        }
+
+        .menu-aparecendo{
+            color: #0C0C44;
+            @media screen and (max-width:1180px) {
+                color: white;
+                display: block;
+                z-index: 10;
+                margin-top: 50rem;
+                background-color: black;
+                width: 100vw;
+                // height: 100vh;
+                margin-left: -17rem;
+
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        
+                        a {
+                            padding: 2rem ;
+                            cursor: pointer;
+                            text-align: center;
+
+                            &:hover {
+                                background-color: #3a3a3a;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .burger {
+            position: relative;
+            width: 40px;
+            height: 30px;
+            background: transparent;
+            cursor: pointer;
+            display: none;
+            left: 20%;
+
+            input {
+                display: none;
+              }
+
+              span {
+                display: block;
+                position: absolute;
+                height: 4px;
+                width: 100%;
+                background: white;
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+                transform: rotate(0deg);
+                transition: .25s ease-in-out;
+
+
+                &:nth-of-type(1) {
+                  top: 0px;
+                  transform-origin: left center;
+                }
+
+                &:nth-of-type(2) {
+                  top: 50%;
+                  transform: translateY(-50%);
+                  transform-origin: left center;
+                }
+
+                &:nth-of-type(3) {
+                    top: 100%;
+                    transform-origin: left center;
+                    transform: translateY(-100%);
+                  }
+              }
+
+
+
+            @media screen and (max-width:1180px) {
+                display: block;
+            }
+
+            @media screen and (max-width:380px) {
+                margin-right: 1rem;
+                left: 10%;
+            }
+
+
+
+          }
 
         .titulo  {
             margin-left: -62rem;
             margin-top: -5.5rem;
             h1{
                 font-size: 5rem;
+            }
+
+            @media screen and (max-width:1180px) {
+                // display: block;
+                margin: 0;
+
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+
+            @media screen and (max-width:800px) {
+                display: none;
             }
         }
 
@@ -50,14 +166,17 @@
             height: 120px;
             border-radius: 50%;
             margin-left: 1rem;
+            cursor: pointer;
+
+            @media screen and (max-width:606px) {
+                width: 80px;
+                height: 80px;
+                
+              }
         }
 
         .perfil {
-            // display: flex;
-            // gap: 10px;
-            // align-items: center;
             margin-left: auto;
-            // gap: 10px;
             margin-right: 10px;
 
             .info-usuario{
@@ -67,32 +186,141 @@
                 margin-left: auto;
                 margin-right: 10px; 
                 color: white;
+
+                .nome-email {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+
+                    .nome-desk {
+                        margin-top: 1rem;
+                    }
+
+                    .email-desk {
+                        font-size: 1.2rem;
+                        margin-top: -0.5rem;
+                    }
+                }
+
+
+                p {
+                    font-size: 1.6rem;
+                    @media screen and (max-width:606px) {
+                        display: none;
+                      }
+                }
             }
 
             .logout {
                 color: red;
                 background-color: #3a3a3a;
-                height: 50px;
-                width: 120px;
+                // height: 50px;
+                left: 90%;
+                padding: 2rem 2rem;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                cursor: pointer;
                 position: absolute;
-                top: 90px;
+                top: 120px;
                 z-index: 1;
                 font-weight: bold;
                 text-shadow: 1px 1px rgb(255, 140, 140);
+                
+                .nome-logout  {
+                    font-size: 1.4rem;
+                    display: none;
+                    color: white;
+                    text-shadow: none;
+                    
+                    @media screen and (max-width:606px) {
+                        display: block;
+                    }
+                }
 
-                &:hover{
-                    background-color: #9a9a9a;
+                .email-logout {
+                    font-size: 1.2rem;
+                    display: none;
+                    color: white;
+                    text-shadow: none;
+
+                    @media screen and (max-width:606px) {
+                        display: block;
+                    }
+                }
+                
+                .btn-logout{
+                    cursor: pointer;
+                    padding: 1rem 2rem;
+                    &:hover{
+                        background-color: #9a9a9a;
+                    }
+                }
+
+                @media screen and (max-width:1390px) {
+                    left: 85vw;
+                }
+    
+                @media screen and (max-width:950px) {
+                    left: 75vw;
+                }
+    
+                @media screen and (max-width:606px) {
+                    left: 55vw;
+                }
+
+                @media screen and (max-width:490px) {
+                    left: 40vw;
+                }
+
+                @media screen and (max-width:380px) {
+                    left: 20vw;
                 }
             } 
+                
+                
 
             .logout-fechado {
                 display: none;
             }
              
+        }
+
+        .container-btn {
+            margin-left: auto;
+            margin-right: 5rem;
+
+            .btn {
+                font-size: 1.2rem;
+                padding: 1.5rem 3rem;
+                border: none;
+                outline: none;
+                border-radius: 0.4rem;
+                cursor: pointer;
+                text-transform: uppercase;
+                background-color: white;
+                color: black;
+                font-weight: 700;
+                transition: 0.6s;
+                box-shadow: 0px 0px 60px #1f4c65;
+                -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+
+                &:active {
+                  scale: 0.92;
+                }
+                &:hover {
+                  background: rgb(2,29,78);
+                  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+                  color: white;
+                  text-shadow: 2px 2px black;
+                }
+              }
+              
+              @media screen and (max-width:380px) {
+                margin-right: 1rem;
+            }
+              
         }
     }
 }

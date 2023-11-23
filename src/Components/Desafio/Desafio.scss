@@ -1,0 +1,95 @@
+.desafio {
+    grid-row: 41/48;
+    grid-column: 1/13;
+    font-size: 2rem;
+    padding-left: 2rem;
+    background-color: white;
+
+    @media screen and (max-width:1655px) {
+        grid-row: 41/50;
+      }
+
+      @media screen and (max-width:1525px) {
+        grid-row: 41/53;
+      }
+
+    @media screen and (max-width:1296px) {
+        grid-row: 45/58;
+      }
+
+      @media screen and (max-width:906px) {
+        grid-row: 47 / 60;
+    }
+
+    @media screen and (max-width:776px) {
+        grid-row: 54/69;
+      }
+
+      @media screen and (max-width:690px) {
+        grid-row: 54/70;
+      }
+
+      @media screen and (max-width:606px) {
+        grid-row: 66/78;
+      }
+
+      @media screen and (max-width:516px) {
+        grid-row: 78/92;
+        font-size: 2rem;
+      }
+}
+
+.container-titulo {
+    padding-top: 3rem;
+    max-width: 80rem;
+
+    h1 {
+        font-size: 5rem;
+
+        @media screen and (max-width:460px) {
+            font-size: 4rem;
+          }
+    }
+
+
+}
+
+.container-lista {
+    margin-left: 35vw;
+    padding: 3rem 0 3rem 10rem;
+    background-color: rgb(255, 95, 95);
+    border-bottom-left-radius: 20rem;
+    border-top-left-radius: 20rem;
+    display: flex;
+    text-shadow: 1px 1px black;
+    color: white;
+
+    @media screen and (max-width:690px) {
+        margin-left: 25vw;
+      }
+
+      @media screen and (max-width:460px) {
+        font-size: 1.6rem;
+        margin-left: 0;
+      }
+
+    ul {
+        list-style: none;
+        line-height: 6rem;
+
+        @media screen and (max-width:1296px) {
+            line-height: 5rem;
+          }
+
+          @media screen and (max-width:606px) {
+            line-height: 3rem;
+
+          }
+    }
+
+}
+
+.container-conclusao {
+    padding-top: 3rem;
+    max-width: 80rem;
+}
