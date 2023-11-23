@@ -7,8 +7,9 @@ import Funcao from "../../Components/Funcao/Funcao.jsx"
 import Vantagem from '../../Components/Vantagem/Vantagem.jsx';
 import Desafio from '../../Components/Desafio/Desafio.jsx';
 
-function Conteudo() {
+export default function Conteudo() {
 
+  if(sessionStorage.getItem("token-user") || localStorage.getItem("token-user")){
     return (
       <>
           <Carrossel />
@@ -21,6 +22,16 @@ function Conteudo() {
       </>
   
     );
+  } else {
+    return (
+      <>
+          <Carrossel />
+          <Solucao />
+          <Acao />
+   
+      </>
+  
+    );
+  }
 }
 
-export default Conteudo;

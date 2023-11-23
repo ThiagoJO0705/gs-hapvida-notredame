@@ -12,7 +12,7 @@ function App() {
   const location = useLocation();
   const { pathname } = location;
 
-  // Exemplo de lógica condicional com base no path
+
   if (pathname === '/login') {
     return (
       <>
@@ -31,7 +31,7 @@ function App() {
         </div> 
       </>
     )
-  } else {
+  } else if (sessionStorage.getItem("token-user") || localStorage.getItem("token-user")){
     return (
       <>
         <div className='container-grid'>        
@@ -41,7 +41,16 @@ function App() {
         </div> 
       </>
     )
+  } else {
+    return (
+      <>
+        <div className='container-grid'>        
+          <Cabecalho />
+          <Outlet/>
+        </div> 
+      </>
+    )
   }
-}
+  }
 
 export default App
