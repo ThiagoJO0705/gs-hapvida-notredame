@@ -1,9 +1,11 @@
+@import "../../Styles/variaveis";
+
 .desafio {
     grid-row: 41/48;
     grid-column: 1/13;
     font-size: 2rem;
     padding-left: 2rem;
-    background-color: white;
+    background-color: $bg-color_secundaria;
 
     @media screen and (max-width:1655px) {
         grid-row: 41/50;
@@ -62,7 +64,7 @@
     border-top-left-radius: 20rem;
     display: flex;
     text-shadow: 1px 1px black;
-    color: white;
+    color: $txt-color_white;
 
     @media screen and (max-width:690px) {
         margin-left: 25vw;

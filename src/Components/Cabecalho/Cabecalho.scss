@@ -1,5 +1,7 @@
+@import "../../Styles/variaveis";
+
 .cabecalho {
-    background-color: #0C0C44;
+    background-color: $bg-color_terciaria;
     width: 100%;
     height: 150px;
     display: flex;
@@ -13,22 +15,22 @@
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-        color: #fff;
+        color: $txt-color_white;
         .menu{
             margin-top: auto;
             cursor: pointer;
             ul{
                 li{
                     list-style: none;
-                    color: #fff;
+                    color: $txt-color_white;
 
                     a {
                         padding: 3rem;
-                        color: white;
+                        color: $txt-color_white;
                         text-decoration: none;
 
                         &:hover {
-                            background-color: #87CEEB;
+                            background-color: $bg-color_principal;
                         }
 
                     }
@@ -45,13 +47,13 @@
         }
 
         .menu-aparecendo{
-            color: #0C0C44;
+            color: $txt-color_azulmarinho;
             @media screen and (max-width:1180px) {
-                color: white;
+                color: $txt-color_white;
                 display: block;
                 z-index: 10;
                 margin-top: 50rem;
-                background-color: black;
+                background-color: $bg-color_black;
                 width: 100vw;
                 // height: 100vh;
                 margin-left: -17rem;
@@ -98,7 +100,7 @@
                 position: absolute;
                 height: 4px;
                 width: 100%;
-                background: white;
+                background: $bg-color_secundaria;
                 border-radius: 9px;
                 opacity: 1;
                 left: 0;
@@ -185,7 +187,7 @@
                 align-items: center;
                 margin-left: auto;
                 margin-right: 10px; 
-                color: white;
+                color: $txt-color_white;
 
                 .nome-email {
                     display: flex;
@@ -213,7 +215,7 @@
             }
 
             .logout {
-                color: red;
+                color: $txt-color_erro;
                 background-color: #3a3a3a;
                 // height: 50px;
                 left: 90%;
@@ -231,7 +233,7 @@
                 .nome-logout  {
                     font-size: 1.4rem;
                     display: none;
-                    color: white;
+                    color: $txt-color_white;
                     text-shadow: none;
                     
                     @media screen and (max-width:606px) {
@@ -242,7 +244,7 @@
                 .email-logout {
                     font-size: 1.2rem;
                     display: none;
-                    color: white;
+                    color: $txt-color_white;
                     text-shadow: none;
 
                     @media screen and (max-width:606px) {
@@ -299,7 +301,7 @@
                 border-radius: 0.4rem;
                 cursor: pointer;
                 text-transform: uppercase;
-                background-color: white;
+                background-color: $bg-color_secundaria;
                 color: black;
                 font-weight: 700;
                 transition: 0.6s;
@@ -312,7 +314,7 @@
                 &:hover {
                   background: rgb(2,29,78);
                   background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
-                  color: white;
+                  color: $txt-color_white;
                   text-shadow: 2px 2px black;
                 }
               }

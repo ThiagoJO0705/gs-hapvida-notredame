@@ -1,8 +1,10 @@
+@import "../../Styles/variaveis";
+
 footer {
     grid-column: 1/13;
     grid-row: 48/50;
-    background-color: #0C0C44;
-    color: white;
+    background-color: $bg-color_terciaria;
+    color: $txt-color_white;
     padding: 2rem;
 
     @media screen and (max-width:1655px) {
