@@ -5,8 +5,9 @@ Nenhum participante é de outra turma. Todos são da 1ESPF
 - Nikolas Rodrigues Moura dos Santos - RM551566 
 - Thiago Jardim de Oliveira - RM551624
 
-## Link Netlifly
+## Links
 heathtrackr.netlify.app
+https://github.com/ThiagoJO0705/gs-hapvida-notredame
 
 ## Usuários
 É possível cadastrar um novo usuário, caso seja necessário.
